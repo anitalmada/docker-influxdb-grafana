@@ -1,49 +1,10 @@
-# Docker-compose files for a simple uptodate
-# InfluxDB
-# + Grafana stack
-# + Telegraf
+# Grafana test dashboards
 
-Get the stack (only once):
+This are the first Grafana dashboards I designed, for memory, CPU usage and disk I/O.
 
-```
-git clone https://github.com/nicolargo/docker-influxdb-grafana.git
-cd docker-influxdb-grafana
-docker pull grafana/grafana
-docker pull influxdb
-docker pull telegraf
-```
+First I forked this repo: [https://github.com/nicolargo/docker-influxdb-grafana](https://github.com/nicolargo/docker-influxdb-grafana)
 
-Run your stack:
+Then made a few panels and set some alerts.
 
-```
-docker-compose up -d
+You can import this dashboard copying the json file from this repo or downloading and importing the file from your Grafana.
 
-```
-
-Show me the logs:
-
-```
-docker-compose logs
-```
-
-Stop it:
-
-```
-docker-compose stop
-docker-compose rm
-```
-
-Update it:
-
-```
-git pull
-docker pull grafana/grafana
-docker pull influxdb
-docker pull telegraf
-```
-
-If you want to run Telegraf, edit the telegraf.conf to yours needs and:
-
-```
-docker exec telegraf telegraf
-```
