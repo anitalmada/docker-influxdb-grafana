@@ -1,6 +1,6 @@
 # Grafana test dashboards
 
-This are the first Grafana dashboards I designed, for memory, CPU usage and disk I/O.
+This are the first Grafana dashboards I designed, for memory, CPU usage and disk free space.
 
 First I forked this repo: [https://github.com/nicolargo/docker-influxdb-grafana](https://github.com/nicolargo/docker-influxdb-grafana)
 
